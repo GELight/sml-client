@@ -1,0 +1,37 @@
+{
+    "name": "@gelight/sml-client",
+    "private": false,
+    "version": "0.0.1",
+    "description": "Simple Markup Language",
+    "main": "dist/index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GELight/sml-client.git"
+    },
+    "keywords": [
+        "ReliableTxt",
+        "WhitespaceSV",
+        "SimpleML",
+        "SML",
+        "Simple",
+        "Markup",
+        "Language"
+    ],
+    "author": "Mario Linz",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/GELight/sml-client/issues"
+    },
+    "homepage": "https://github.com/GELight/sml-client#readme",
+    "scripts": {
+        "build": "tsc && node dist/index.js"
+    },
+    "dev": {
+        "@gelight/sml": "^0.0.1"
+    },
+    "devDependencies": {
+        "@types/node": "^14.14.27",
+        "tslint": "^5.12.1",
+        "typescript": "^3.3.3"
+    }
+}

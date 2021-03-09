@@ -1,7 +1,7 @@
 {
     "name": "@gelight/sml-client",
     "private": false,
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Simple Markup Language",
     "main": "dist/index.js",
     "repository": {
@@ -24,14 +24,26 @@
     },
     "homepage": "https://github.com/GELight/sml-client#readme",
     "scripts": {
-        "build": "tsc && node dist/index.js"
+        "build": "tsc && node dist/index.js && npm run bundle",
+        "bundle": "webpack --config webpack.config.js"
     },
     "dependencies": {
-        "@gelight/sml": "^0.0.1"
+        "@gelight/sml": "^0.0.2"
     },
     "devDependencies": {
         "@types/node": "^14.14.27",
         "tslint": "^5.12.1",
-        "typescript": "^3.3.3"
+        "typescript": "^3.3.3",
+        "webpack": "^5.24.4",
+        "webpack-cli": "^4.5.0"
+    },
+    "files": [
+      "dist",
+      "releases"
+    ],
+    "browser": {
+        "fs": false,
+        "path": false,
+        "os": false
     }
 }

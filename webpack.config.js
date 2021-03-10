@@ -11,7 +11,7 @@ module.exports = {
     output: {
         filename: `${RELEASE_NAME}-${config.version}.min.js`,
         path: RELEASES_PATH,
-        libraryTarget: "var",
+        libraryTarget: "umd",
         library: LIBRARY_NAME,
     },
     resolve: {

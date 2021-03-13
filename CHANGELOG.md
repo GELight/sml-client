@@ -11,3 +11,9 @@
 * **sml-client bundle:** use webpack for create release bundles
 * **sml-client bundle:** provide a minimized bundle of the sml-client lib in new "**/releases**" directory
 * **package:** complete the package information by change log and licence file
+
+## [0.0.5](https://github.com/GELight/sml-client) (2021-03-13)
+
+### Package Improvements
+
+* **sml-client bundle:** use unpkg property in package.json to publish the umd build unpkg.com (e.g.: "releases/sml-client-0.0.5.min.js")

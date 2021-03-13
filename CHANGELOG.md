@@ -17,3 +17,9 @@
 ### Package Improvements
 
 * **sml-client bundle:** use unpkg property in package.json to publish the umd build unpkg.com (e.g.: "releases/sml-client-0.0.5.min.js")
+
+## [0.0.8](https://github.com/GELight/sml-client) (2021-03-13)
+
+### Package Improvements
+
+* **sml-client bundle:** use jsdelivr property in package.json to publish the umd build on jsdelivr CDN (e.g.: "releases/sml-client-0.0.8.min.js")

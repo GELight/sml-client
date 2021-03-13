@@ -1,10 +1,16 @@
 {
     "name": "@gelight/sml-client",
     "private": false,
-    "version": "0.0.5",
+    "version": "0.0.8",
     "description": "Simple Markup Language",
     "main": "dist/index.js",
     "unpkg": "releases/sml-client-$npm_package_version.min.js",
+    "jsdelivr": "releases/sml-client-$npm_package_version.min.js",
+    "browser": {
+        "fs": false,
+        "path": false,
+        "os": false
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/GELight/sml-client.git"
@@ -41,10 +47,5 @@
     "files": [
       "dist",
       "releases"
-    ],
-    "browser": {
-        "fs": false,
-        "path": false,
-        "os": false
-    }
+    ]
 }

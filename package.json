@@ -1,7 +1,7 @@
 {
     "name": "@gelight/sml-client",
     "private": false,
-    "version": "0.0.10",
+    "version": "0.0.11",
     "description": "Simple Markup Language",
     "main": "dist/index.js",
     "unpkg": "releases/sml-client.min.js",

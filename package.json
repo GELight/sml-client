@@ -32,7 +32,10 @@
     "homepage": "https://github.com/GELight/sml-client#readme",
     "scripts": {
         "build": "tsc && node dist/index.js && npm run bundle",
-        "bundle": "webpack --config webpack.config.js"
+        "bundle": "webpack --config webpack.config.js",
+        "preversion" : "echo 'preversion' && npm run build",
+        "version" : "echo 'version' && git add .",
+        "postversion" : "echo 'postversion' && git push && git push --tags"
     },
     "dependencies": {
         "@gelight/sml": "^0.0.2"

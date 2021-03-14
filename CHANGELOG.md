@@ -23,3 +23,9 @@
 ### Package Improvements
 
 * **sml-client bundle:** use jsdelivr property in package.json to publish the umd build on jsdelivr CDN (e.g.: "releases/sml-client-0.0.8.min.js")
+
+## [0.0.8 ... 0.0.9](https://github.com/GELight/sml-client) (2021-03-14)
+
+### Package Improvements
+
+* **sml-client release build:** working on better releas build scripts

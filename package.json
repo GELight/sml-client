@@ -4,8 +4,8 @@
     "version": "0.0.10",
     "description": "Simple Markup Language",
     "main": "dist/index.js",
-    "unpkg": "releases/sml-client-$npm_package_version.min.js",
-    "jsdelivr": "releases/sml-client-$npm_package_version.min.js",
+    "unpkg": "releases/sml-client.min.js",
+    "jsdelivr": "releases/sml-client.min.js",
     "browser": {
         "fs": false,
         "path": false,

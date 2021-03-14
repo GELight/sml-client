@@ -14,6 +14,7 @@ echo $GIT_RELEASE_VERSION
 if [[ "$RELEASE_VERSION" == "$GIT_RELEASE_VERSION" ]]; then
     echo "Release version $RELEASE_VERSION already exists on git!"
 else
+    npm run build
     git add .
     git commit -m "Build release version $RELEASE_VERSION"
     git push

@@ -1,7 +1,7 @@
 {
     "name": "@gelight/sml-client",
     "private": false,
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Simple Markup Language",
     "main": "dist/index.js",
     "unpkg": "releases/sml-client-$npm_package_version.min.js",
@@ -33,9 +33,9 @@
     "scripts": {
         "build": "tsc && node dist/index.js && npm run bundle",
         "bundle": "webpack --config webpack.config.js",
-        "preversion" : "echo 'preversion' && npm run build",
-        "version" : "echo 'version' && git add .",
-        "postversion" : "echo 'postversion' && git push && git push --tags"
+        "preversion": "echo 'preversion' && npm run build",
+        "version": "echo 'version' && git add .",
+        "postversion": "echo 'postversion' && git push && git push --tags"
     },
     "dependencies": {
         "@gelight/sml": "^0.0.2"
@@ -48,7 +48,7 @@
         "webpack-cli": "^4.5.0"
     },
     "files": [
-      "dist",
-      "releases"
+        "dist",
+        "releases"
     ]
 }

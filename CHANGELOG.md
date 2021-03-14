@@ -30,3 +30,4 @@
 
 * **sml-client release build:** working on better releas build scripts
 * **sml-client bundle:** fix for using unpkg CDN in package.json
+* **sml-client readme:** adapt the readme file of the package and improve the documentation

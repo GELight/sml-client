@@ -75,6 +75,9 @@ Konsolenausgabe:
 ```
 
 ### A complete browser example by using per CDN import
+
+>The complete example is also available as on [codepen.io](https://codepen.io/gelight/pen/YzpRgxL)
+
 1. Create a index.html file on your local computer
 2. Copy the sources below in your created html file and open it in your browser.
 ```html
@@ -125,7 +128,7 @@ Konsolenausgabe:
 
         <script src="https://unpkg.com/@gelight/sml-client"></script>
         <script>
-            const doc = window["SML-CLIENT"].SmlDocument.parse(`
+            const doc = SML.SmlDocument.parse(`
                 # My first SML document
                 MyRootElement
                 MyFirstAttribute Hi

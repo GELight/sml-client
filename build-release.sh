@@ -16,8 +16,9 @@ if [[ "$RELEASE_VERSION" == "$GIT_RELEASE_VERSION" ]]; then
 else
     npm run build
     git add .
-    git commit -m "Build release version $RELEASE_VERSION"
+    git commit -m "Release build v$RELEASE_VERSION"
     git push
+    git tag -a v$RELEASE_VERSION -m "Release build v$RELEASE_VERSION"
     git push --tags
     npm publish
 fi

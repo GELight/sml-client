@@ -10,6 +10,7 @@ import { SmlNamedNode } from "@gelight/sml";
 import { SmlNode } from "@gelight/sml";
 import { SmlEmptyNode } from "@gelight/sml";
 import { SmlParserException } from "@gelight/sml";
+import SmlRequest from "./sml/SmlRequest";
 
 import { WsvChar } from "@gelight/sml";
 import { WsvLine } from "@gelight/sml";
@@ -31,6 +32,7 @@ export {
     SmlNode,
     SmlEmptyNode,
     SmlParserException,
+    SmlRequest,
 
     WsvChar,
     WsvLine,

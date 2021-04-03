@@ -14,7 +14,10 @@ class SmlRequest {
     static get(url) {
         return __awaiter(this, void 0, void 0, function* () {
             const response = yield fetch(url, {
-                headers: { "Content-Type": "text/plain" },
+                headers: {
+                    "Accept": "text/plain",
+                    "Content-Type": "text/plain"
+                },
                 method: "GET"
             });
             const responseText = yield response.text();
@@ -25,7 +28,10 @@ class SmlRequest {
         return __awaiter(this, void 0, void 0, function* () {
             const response = yield fetch(url, {
                 body: data.toString(),
-                headers: { "Content-Type": "text/plain" },
+                headers: {
+                    "Accept": "text/plain",
+                    "Content-Type": "text/plain"
+                },
                 method: "POST"
             });
             const responseText = yield response.text();
@@ -35,7 +41,10 @@ class SmlRequest {
     static delete(url) {
         return __awaiter(this, void 0, void 0, function* () {
             const response = yield fetch(url, {
-                headers: { "Content-Type": "text/plain" },
+                headers: {
+                    "Accept": "text/plain",
+                    "Content-Type": "text/plain"
+                },
                 method: "DELETE"
             });
             const responseText = yield response.text();
@@ -46,7 +55,10 @@ class SmlRequest {
         return __awaiter(this, void 0, void 0, function* () {
             const response = yield fetch(url, {
                 body: data.toString(),
-                headers: { "Content-Type": "text/plain" },
+                headers: {
+                    "Accept": "text/plain",
+                    "Content-Type": "text/plain"
+                },
                 method: "PUT"
             });
             const responseText = yield response.text();
@@ -57,7 +69,10 @@ class SmlRequest {
         return __awaiter(this, void 0, void 0, function* () {
             const response = yield fetch(url, {
                 body: data.toString(),
-                headers: { "Content-Type": "text/plain" },
+                headers: {
+                    "Accept": "text/plain",
+                    "Content-Type": "text/plain"
+                },
                 method: "PATCH"
             });
             const responseText = yield response.text();

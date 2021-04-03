@@ -38,4 +38,5 @@ const sml_15 = require("@gelight/sml");
 Object.defineProperty(exports, "WsvParserException", { enumerable: true, get: function () { return sml_15.WsvParserException; } });
 const sml_16 = require("@gelight/sml");
 Object.defineProperty(exports, "StringUtil", { enumerable: true, get: function () { return sml_16.StringUtil; } });
+console.warn("Experimental > SmlRequest: This feature is a work in progress. Don't depend on it yet. It may go through significant changes.");
 //# sourceMappingURL=index.js.map

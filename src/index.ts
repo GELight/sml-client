@@ -19,6 +19,8 @@ import { WsvParserException } from "@gelight/sml";
 
 import { StringUtil } from "@gelight/sml";
 
+console.warn("Experimental > SmlRequest: This feature is a work in progress. Don't depend on it yet. It may go through significant changes.");
+
 export {
     ReliableTxtDocument,
     ReliableTxtException,

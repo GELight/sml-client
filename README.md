@@ -62,16 +62,18 @@ import { SmlDocument } from "@gelight/sml";
 
 const doc = SmlDocument.parse(`
 Hello
-  About I am "a simple" SML document
-World
+  About
+    Name My name is SML
+    Description I am a Simple Markup Language
+  End
+  About This is "a simple" SML document
+End
 `);
-const values = doc.getRoot().getAttribute("About").getValues();
+
+// Get all attributes from SML document
+const attrs = doc.getRoot().getElement("About").getAttributes();
 
 console.log(values);
-```
-Konsolenausgabe:
-```
-[ 'I', 'am', 'a simple', 'SML', 'document' ]
 ```
 
 ### A complete browser example by using per CDN import
@@ -128,40 +130,71 @@ Konsolenausgabe:
 
         <script src="https://unpkg.com/@gelight/sml-client"></script>
         <script>
-            const doc = SML.SmlDocument.parse(`
-                # My first SML document
-                MyRootElement
-                MyFirstAttribute Hi
-                #Group1
-                    #  MyFirstAttributeInGroup 123
-                    #  MySecondAttributeInGroup 10 20 30 40 50
-                #End
-                MySecondAttribute SML says "Hello world" to all of you # Comment
-                MyThirdAttribute 你好
-                End
-            `);
-
-            // Get all attributes from DML document
-            const attrs = doc.getRoot().getAttributes();
-
-            // Show all elements and values as HTML
+          const renderAttributes = (attrs) => {
             let v = document.querySelector(".output");
             for (const attr of attrs) {
-            let attrElm = document.createElement("div");
-            attrElm.className = "attribute";
-            
-            for (const value of attr.getValues()) {
+              let attrElm = document.createElement("div");
+              attrElm.className = "attribute";
+
+              for (const value of attr.getValues()) {
                 let valueElm = document.createElement("div");
                 valueElm.className = "value";
                 let valueText = document.createTextNode(value);
                 valueElm.appendChild(valueText);
                 attrElm.appendChild(valueElm);
+              }
+
+              v.append(attrElm);
             }
-            
-            v.append(attrElm);
-            }
+          }
+
+          const doc = SML.SmlDocument.parse(`
+          Hello
+            About
+              Name My name is SML
+              Description I am a Simple Markup Language
+            End
+            About This is "a simple" SML document
+          End
+          `);
+
+          // Get all attributes from SML document
+          const attrs = doc.getRoot().getElement("About").getAttributes();
+
+          console.log(attrs);
+
+          // Show attrubutes from element "About" as HTML
+          renderAttributes(attrs);
         </script>
     </body>
 </html>
 
+```
+
+### Client to server requests with SmlRequest
+
+>This client example use the new SmlRequest class which is in experimental state.
+
+```html
+<script src="https://unpkg.com/@gelight/sml-client"></script>
+<script>
+  const doc = await SML.SmlRequest.post("/peoples", SML.SmlDocument.parse(`
+  MyBodyData
+    FirstName William
+    LastName Smith
+    Age 37
+  End
+  `));
+
+  /**
+   * SmlRequest use the fatech api for requests and 
+   * only expects a SmlDocument as a text/plain response from the server.
+   * 
+   * The SmlRequest class will parse the response for you and returns the 
+   * response as an SmlDocument.
+   * 
+   * Available methods are GET, POST, PUT, PATCH and DELETE
+   */
+  const attrs = doc.getRoot().getAttributes();
+</script>
 ```

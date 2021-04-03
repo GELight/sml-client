@@ -10,6 +10,7 @@ import { SmlNamedNode } from "@gelight/sml";
 import { SmlNode } from "@gelight/sml";
 import { SmlEmptyNode } from "@gelight/sml";
 import { SmlParserException } from "@gelight/sml";
+import SmlRequest from "./sml/SmlRequest";
 
 import { WsvChar } from "@gelight/sml";
 import { WsvLine } from "@gelight/sml";
@@ -17,6 +18,8 @@ import { WsvDocument } from "@gelight/sml";
 import { WsvParserException } from "@gelight/sml";
 
 import { StringUtil } from "@gelight/sml";
+
+console.warn("Experimental > SmlRequest: This feature is a work in progress. Don't depend on it yet. It may go through significant changes.");
 
 export {
     ReliableTxtDocument,
@@ -31,6 +34,7 @@ export {
     SmlNode,
     SmlEmptyNode,
     SmlParserException,
+    SmlRequest,
 
     WsvChar,
     WsvLine,

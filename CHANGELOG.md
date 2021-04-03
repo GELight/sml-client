@@ -31,3 +31,10 @@
 * **sml-client release build:** working on better releas build scripts
 * **sml-client bundle:** fix for using unpkg CDN in package.json
 * **sml-client readme:** adapt the readme file of the package and improve the documentation
+
+## [0.1.0](https://github.com/GELight/sml-client) (2021-04-03)
+
+### New Feature
+
+* **SmlRequest:** Implement a prototype class for client to server requests based on the fetch api. 
+* This feature is in experimental state and work in progress. You can test it but don't depend on it yet. It may go through significant changes

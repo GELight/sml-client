@@ -1,6 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.StringUtil = exports.WsvParserException = exports.WsvDocument = exports.WsvLine = exports.WsvChar = exports.SmlParserException = exports.SmlEmptyNode = exports.SmlNode = exports.SmlNamedNode = exports.SmlElement = exports.SmlDocument = exports.SmlAttribute = exports.ReliableTxtFile = exports.ReliableTxtEncoding = exports.ReliableTxtException = exports.ReliableTxtDocument = void 0;
+exports.StringUtil = exports.WsvParserException = exports.WsvDocument = exports.WsvLine = exports.WsvChar = exports.SmlRequest = exports.SmlParserException = exports.SmlEmptyNode = exports.SmlNode = exports.SmlNamedNode = exports.SmlElement = exports.SmlDocument = exports.SmlAttribute = exports.ReliableTxtFile = exports.ReliableTxtEncoding = exports.ReliableTxtException = exports.ReliableTxtDocument = void 0;
 const sml_1 = require("@gelight/sml");
 Object.defineProperty(exports, "ReliableTxtDocument", { enumerable: true, get: function () { return sml_1.ReliableTxtDocument; } });
 const sml_2 = require("@gelight/sml");
@@ -23,6 +26,8 @@ const sml_10 = require("@gelight/sml");
 Object.defineProperty(exports, "SmlEmptyNode", { enumerable: true, get: function () { return sml_10.SmlEmptyNode; } });
 const sml_11 = require("@gelight/sml");
 Object.defineProperty(exports, "SmlParserException", { enumerable: true, get: function () { return sml_11.SmlParserException; } });
+const SmlRequest_1 = __importDefault(require("./sml/SmlRequest"));
+exports.SmlRequest = SmlRequest_1.default;
 const sml_12 = require("@gelight/sml");
 Object.defineProperty(exports, "WsvChar", { enumerable: true, get: function () { return sml_12.WsvChar; } });
 const sml_13 = require("@gelight/sml");
@@ -33,4 +38,5 @@ const sml_15 = require("@gelight/sml");
 Object.defineProperty(exports, "WsvParserException", { enumerable: true, get: function () { return sml_15.WsvParserException; } });
 const sml_16 = require("@gelight/sml");
 Object.defineProperty(exports, "StringUtil", { enumerable: true, get: function () { return sml_16.StringUtil; } });
+console.warn("Experimental > SmlRequest: This feature is a work in progress. Don't depend on it yet. It may go through significant changes.");
 //# sourceMappingURL=index.js.map

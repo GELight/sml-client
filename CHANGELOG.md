@@ -38,3 +38,9 @@
 
 * **SmlRequest:** Implement a prototype class for client to server requests based on the fetch api. 
 * This feature is in experimental state and work in progress. You can test it but don't depend on it yet. It may go through significant changes
+
+## [0.1.1](https://github.com/GELight/sml-client) (2021-04-12)
+
+### Update Dependency
+
+* **sml:** Update dependency version for package [SML](https://github.com/GELight/sml) from 0.0.2 to v0.1.3

@@ -3,7 +3,7 @@ import {
     ReliableTxtEncoding,
     ReliableTxtException,
     ReliableTxtFile
-} from "@gelight/reliabletxt";
+} from "@gelight/sml";
 
 import {
     StringUtil,
@@ -12,7 +12,7 @@ import {
     WsvDocumentLineIterator,
     WsvLine,
     WsvParserException
-} from "@gelight/whitespacesv";
+} from "@gelight/sml";
 
 import {
     SmlAttribute,

@@ -37,7 +37,7 @@
     "release": "./build-release.sh"
   },
   "devDependencies": {
-    "@gelight/sml": "^0.2.2",
+    "@gelight/sml": "^0.2.3",
     "@types/node": "^16.7.10",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
